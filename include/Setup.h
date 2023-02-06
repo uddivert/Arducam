@@ -11,11 +11,6 @@
 #include "arducam_config_parser.h"
 
 extern "C" {
-    struct USBCamera {
-        std::ofstream cfg_file;
-        CameraConfigs cam_cfgs;
-    } CameraSetup;
-    
     int cameraInit(char *fileName); // will initialize Camera
 }
 #endif
